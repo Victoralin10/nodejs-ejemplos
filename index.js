@@ -1,8 +1,15 @@
 
-console.log("Hello world");
+const http = require('http');
 
-for (let i = 0; i < 10; i++) {
-    console.log(i, i*i);
-}
+const hostname = '127.0.0.1';
+const port = 3000;
 
-console.error("Error");
+const server = http.createServer((req, res) => {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello World\n');
+});
+
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}/`);
+});

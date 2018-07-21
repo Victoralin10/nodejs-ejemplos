@@ -5,4 +5,6 @@ const fs = require('fs');
 const inp = fs.createReadStream('text.txt');
 const out = fs.createWriteStream('text.txt.gz');
 
-inp.pipe(gzip).pipe(out);
+inp
+    .pipe(gzip)
+    .pipe(out);
