@@ -5,7 +5,8 @@ console.log('x+y:', x + y);
 
 function foo() {
 	return [175, 75];
-};
+}
+
 let [height, weight] = foo();
 console.log('hw:', height, weight);
 

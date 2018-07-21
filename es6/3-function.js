@@ -3,13 +3,13 @@ setInterval(() => {
 	console.log('hi world');
 }, 100);
 
-var vowels = ['a', 'e', 'i', 'o', 'u'];
+let vowels = ['a', 'e', 'i', 'o', 'u'];
 vowels.forEach(value => {
 	console.log('vowel :' + value);
 });
 
 
-var sum = (a, b) => a + b;
+let sum = (a, b) => a + b;
 console.log(sum(4, 5));
 
 
